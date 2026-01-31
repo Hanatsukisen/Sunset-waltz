@@ -321,7 +321,7 @@ stt {
 }
 
 .card_object {
-  width: 200px;
+  width: 199px;
   height: 200px;
   text-align: center;
   align-items: anchor-center;
@@ -347,9 +347,9 @@ stt {
   transition: opacity 0.3s ease, transform 0.3s ease;
   color: var(--textcoloraccent);
   background: var(--blanc2);
-  width: 200px;
+  width: 199px;
   height: 200px;
-  margin-top: -168px;
+  margin-top: -162px;
 }
 .card_object:hover .hover-text {
   opacity: 1;
