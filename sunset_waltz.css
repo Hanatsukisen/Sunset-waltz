@@ -1,7 +1,7 @@
 /********FICHE DE PRESENTATION************/
 
 .fiche_back {
-  height: 738px;
+  height: auto;
   margin: auto;
   width: fit-content;
   background: var(--blanc1);
@@ -189,6 +189,12 @@ c2 {
   padding: 10px;
   overflow: auto;
 }
+
+.chara_infos {padding: 15px;height: auto;border-top: 1px solid var(--couleur3);background-color: var(--blanc2);}
+.tags_fiche2 {display: flex;justify-content: space-evenly;}
+.avis_content {text-align: justify;background-color: var(--blanc1);height: 150px;width: 400px;overflow: auto;border: 1px solid var(--couleur2);padding: 15px;}
+.avis_fiche_1{align-items: center;display:flex;justify-content: space-between;}
+.avis_aes {width: 300px;text-align-last: center;}
 
 
 /********SUJETS DE BASE********/
