@@ -195,7 +195,10 @@ c2 {
 .avis_content {text-align: justify;background-color: var(--blanc1);height: 150px;width: 400px;overflow: auto;border: 1px solid var(--couleur2);padding: 15px;}
 .avis_fiche_1{align-items: center;display:flex;justify-content: space-between;}
 .avis_aes {width: 300px;text-align-last: center;}
-
+.icone1_f {font-size: 10px;color: var(--textColorAccent);width: 90px;height: 70px;display: flex;border: 1px solid var(--couleur2);flex-direction: column;justify-content: center;align-items: center;background: var(--blanc2);border-radius: 10px;}
+.icones_fiche {display: flex;justify-content: space-around;}
+.sub_top {justify-content: space-evenly;padding: 15px 5px 15px 5px;}
+.sub_top1 {padding: 11px;}
 
 /********SUJETS DE BASE********/
 
