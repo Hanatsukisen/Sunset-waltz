@@ -469,7 +469,7 @@ stt {
 
 /***********************/
 
-/*********RPS**********/
+/*********RPS AVEC PETITE FLEUR ET TAGS**********/
 
 .rp_title1 {display: flex;flex-direction: row;align-self: center;gap: 6px;}
 .basic_container{padding-top: 50px;}
@@ -477,3 +477,23 @@ stt {
 .icons_rp1{border-radius: 0 25% 0 25%;outline: 1px solid var(--couleur1);outline-offset: 5px;}
 .title_rp1 {display: flex;flex-direction: column;gap:5px;align-self: center;}
 .rp_tags1 {gap: 5px;display: flex;flex-direction: column;text-align: right;}
+
+/*********RPS AVEC FLOU ET TRAITS COTE DROIT**********/
+
+.rphna1{height: 643px;background: var(--transp5);display: flex;justify-content: space-between;margin: auto;}
+.rplefthn1::-webkit-scrollbar{width:4px;}
+.imgrightthn1{border-left: 1px solid var(--couleur1);display: flex;width:400px;}
+.rplefthn1{padding-right: 15px;overflow: auto;text-align:justify;width:403px;margin: 20px;}
+.rprightimghn1{filter: grayscale(1);border-radius: 0;width:310px;object-fit: cover;}
+.picrphn1hove5 {backdrop-filter: blur(5px);height: 643px;width: 95px;position: absolute;z-index: 0;border-right: 1px solid var(--blanc1);}
+.picrphn1hove4 {z-index: 1;height: 1px;background: var(--blanc1);width: 312px;position: absolute;margin-top: 100px;}
+.picrphn1hove6 {height: 660px;background: var(--blanc1);width: 1px;position: absolute;right: 237px;z-index: 1;}
+.picrphn1hove7 {height: 100px;background: var(--noirblanc1);width: 94px;position: absolute;z-index: 1;background: var(--couleur1);opacity: 0.5;}
+.footer1hnrp2 {background: var(--noirblanc1);border-top: 1px solid var(--couleur1);align-content: center;display: flex;letter-spacing: 1px;font-size: 9px;text-transform: uppercase;padding: 20px;font-weight: bold;justify-content: space-around;}
+.containerphn2{margin: auto;background: var(--blanc2);outline: 1px solid var(--couleur1);border: 1px solid var(--blanc1); width: 670px;}
+.header1rphn1{background: var(--noirblanc1);border-top: 1px solid var(--couleur1);height: 70px;margin: auto;}
+.quoteehn1rp {position: relative;transform: rotate(90deg);color: var(--blanc1);right: 160px;top: 340px;letter-spacing: 1px;font-size: 9px;text-transform: uppercase;border-radius: 5px;padding: 3px;text-align: justify;width: 430px;}
+.titllehnarp1 {margin-top: 270px;font-size: 50px;position: absolute;text-align: left;;line-height: 50px;margin-left: 113px;width: 285px;color: var(--blanc1);z-index: 2;text-shadow: 2px 0 var(--couleur1), -2px 0 var(--couleur1), 0 2px var(--couleur1), 0 -2px var(--couleur1), 1px 1px var(--couleur1), -1px -1px var(--couleur1), 1px -1px var(--couleur1), -1px 1px var(--couleur1);}
+
+
+
