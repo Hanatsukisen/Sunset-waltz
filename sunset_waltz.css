@@ -207,7 +207,7 @@ c2 {
   display: flex;
   justify-content: flex-start;
   margin: auto;
-    width: 760px;
+    width: 600px;
   background: var(--blanc1);
 }
 .basic_title {
