@@ -71,7 +71,7 @@ b1 {
   border-bottom: 1px solid var(--couleur3);
   padding: 10px;
   border-right: 1px solid var(--couleur3);
-  width: 250px;
+  width: 100%;
   height: 267px;
   overflow: auto;
 }
