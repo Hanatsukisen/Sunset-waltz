@@ -11,23 +11,23 @@
   flex-direction: row;
 }
 .f_sidebar {
-  background: var(--blanc2);
-  width: 640px;
-  height: 60px;
-  position: absolute;
-  transform: rotate(-90deg);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: poppins;
-  margin-left: -290px;
-  margin-top: 289px;
-  letter-spacing: 1px;
-  font-size: 9px;
-  font-weight: 800;
-  padding: 0 10px;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--couleur3);
+background: var(--blanc2);
+    width: 685px;
+    height: 60px;
+    position: absolute;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: poppins;
+    margin-left: -312px;
+    margin-top: 313px;
+    letter-spacing: 1px;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 0 10px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--couleur3);
 }
 .f_ava {
   width: 200px;
