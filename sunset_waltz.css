@@ -88,9 +88,11 @@ c1 {
   flex-direction: row;
 }
 .f_part1_subinfos {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-evenly;
 }
 .sub_1 {
   border: 1px solid var(--couleur3);
