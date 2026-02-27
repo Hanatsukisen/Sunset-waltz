@@ -543,7 +543,7 @@ stt {
 .inv-grille { display:flex !important; flex-wrap:wrap !important; gap:10px !important; }
 
 /* ── Carte objet ── */
-.inv-carte { flex:1 1 120px !important; max-width:175px !important; background:var(--blanc1) !important; border:1px solid var(--couleur3) !important; border-radius:2px !important; padding:12px 8px !important; text-align:center !important; position:relative !important; overflow:hidden !important; display:flex !important; flex-direction:column !important; align-items:center !important; gap:5px !important; isolation:isolate !important; transition:border-color .2s,box-shadow .2s !important; }
+.inv-carte { flex:1 1 120px !important; max-width:175px !important; background:var(--blanc1) !important;border-right:1px solid var(--couleur3) !important;border-left:1px solid var(--couleur3) !important; border-radius:10px !important; padding:12px 8px !important; text-align:center !important; position:relative !important; overflow:hidden !important; display:flex !important; flex-direction:column !important; align-items:center !important; gap:5px !important; isolation:isolate !important; transition:border-color .2s,box-shadow .2s !important; }
 .inv-carte:hover { box-shadow:0 2px 10px rgba(0,0,0,.08) !important; }
 .inv-carte img { width:56px !important; height:56px !important; object-fit:contain !important; display:block !important; }
 .inv-nom { font-size:10px !important; font-weight:700 !important; text-transform:uppercase !important; letter-spacing:.5px !important; }
@@ -558,15 +558,22 @@ stt {
 .inv-carte[data-achat="BOUTIQUE"] { border-color:rgba(118,146,184,.3) !important; }
 .inv-carte[data-achat="BOUTIQUE"]:hover { border-color:#7692B8 !important; }
 .inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color:#7692B8 !important; }
-.inv-carte[data-achat="BOUTIQUE"] .inv-hover { background:#e8edf4 !important; border:1px solid #7692B8 !important; }
+.inv-carte[data-achat="BOUTIQUE"] .inv-hover { background:#e8edf4 !important; border-left:1px solid #7692B8 !important; border-right:1px solid #7692B8 !important;}
 .inv-carte[data-achat="BOUTIQUE"] .inv-tag { color:#7692B8 !important; background:#f2f4f9 !important; border-color:#7692B8 !important; }
 
 /* DONJON */
 .inv-carte[data-achat="DONJON"] { border-color:rgba(184,152,64,.3) !important; }
 .inv-carte[data-achat="DONJON"]:hover { border-color:#b89840 !important; }
 .inv-carte[data-achat="DONJON"] .inv-rang b { color:#b89840 !important; }
-.inv-carte[data-achat="DONJON"] .inv-hover { background:#f4f0e4 !important; border:1px solid #b89840 !important; }
+.inv-carte[data-achat="DONJON"] .inv-hover { background:#f4f0e4 !important; border-left:1px solid #b89840 !important; border-right:1px solid #b89840 !important; }
 .inv-carte[data-achat="DONJON"] .inv-tag { color:#b89840 !important; background:#faf7ee !important; border-color:#b89840 !important; }
+
+/* EVENT */
+.inv-carte[data-achat="EVENT"] { border-color:#84d394!important; }
+.inv-carte[data-achat="EVENT"]:hover { border-color:#84d394 !important; }
+.inv-carte[data-achat="EVENT"] .inv-rang b { color:#84d394 !important; }
+.inv-carte[data-achat="EVENT"] .inv-hover { background:#d2e6dc !important; border-left:1px solid #84d394 !important; border-right:1px solid #84d394 !important; }
+.inv-carte[data-achat="EVENT"] .inv-tag { color:#84d394 !important; background:#d2e6dc !important; border-color:#84d394 !important; }
 
 /* Pastille */
 .inv-carte::after { content:'' !important; position:absolute !important; top:6px !important; right:6px !important; width:6px !important; height:6px !important; border-radius:50% !important; z-index:1 !important; }
