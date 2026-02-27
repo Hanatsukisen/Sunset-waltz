@@ -726,7 +726,7 @@ stt {
 
   .obj-carte[data-achat="EVENT"] .obj-rang a { color: #84d394; }
 .obj-carte[data-achat="EVENT"] .obj-tag {
-  color: #b89840;
+  color: #84d394;
   background: #d2e6dc;
   border-color: #84d394;
 }
