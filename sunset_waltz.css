@@ -509,3 +509,124 @@ stt {
 
 
 
+/********INVENTAIRE***********/
+
+/* Neutralise le ::first-letter du thème */
+.inv-page::first-letter { all: unset; }
+
+/* ── Sections ── */
+.inv-section {
+ background: var(--blanc2);
+ border: 1px solid var(--couleur3);
+ padding: 18px;
+ margin-bottom: 20px;
+}
+
+.inv-titre {
+ font-size: 12px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: var(--couleur2);
+ border-bottom: 1px solid var(--couleur3);
+ padding-bottom: 8px;
+ margin-bottom: 16px;
+}
+
+.inv-grille {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+}
+
+/* ── Carte ── */
+.inv-carte {
+ width: 150px;
+ background: var(--blanc1);
+ border: 1px solid var(--couleur3);
+ border-radius: 2px;
+ padding: 12px 8px;
+ text-align: center;
+ position: relative !important;
+ overflow: hidden;
+ display: inline-flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 6px;
+ vertical-align: top;
+ isolation: isolate;
+ transition: border-color .2s, box-shadow .2s;
+}
+
+.inv-carte:hover {
+ border-color: var(--couleur2);
+ box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.inv-carte img {
+ width: 60px;
+ height: 60px;
+ object-fit: contain;
+ display: block;
+}
+
+.inv-carte .inv-nom {
+ font-size: 10px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: .5px;
+}
+
+.inv-carte .inv-rang {
+ font-size: 9px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: var(--couleur3);
+}
+
+.inv-carte .inv-rang b {
+ color: var(--couleur2);
+ font-weight: 700;
+}
+
+/* ── Hover overlay ── */
+.inv-carte .inv-hover {
+ position: absolute;
+ top: 0; left: 0; right: 0; bottom: 0;
+ background: #e8ecf0;
+ border: 1px solid #7692B8;
+ color: #3a3a4a;
+ font-size: 10px;
+ line-height: 1.6;
+ text-align: center;
+ padding: 10px 8px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 6px;
+ opacity: 0;
+ pointer-events: none;
+ transition: opacity .2s ease;
+ border-radius: 2px;
+ box-sizing: border-box;
+ z-index: 2;
+}
+
+.inv-carte:hover .inv-hover {
+ opacity: 1;
+}
+
+.inv-tag {
+ display: inline-block;
+ padding: 3px 7px;
+ font-size: 8px;
+ font-weight: 700;
+ font-family: Poppins, sans-serif;
+ text-transform: uppercase;
+ letter-spacing: .5px;
+ color: #7692B8;
+ background: #f4f6f9;
+ border: 1px solid #7692B8;
+ border-radius: 2px;
+}
