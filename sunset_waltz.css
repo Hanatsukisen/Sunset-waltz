@@ -575,6 +575,9 @@ stt {
 
 /* Tag inventaire */
 .inv-tag { display:inline-block !important; padding:3px 7px !important; font-size:8px !important; font-weight:700 !important; font-family:Poppins,sans-serif !important; text-transform:uppercase !important; letter-spacing:.5px !important; border-radius:2px !important; border:1px solid !important; }
+
+
+
 /*****COLLECTION INVENTAIRE************/
 
 .obj-page::first-letter { all: unset; }
@@ -613,22 +616,25 @@ stt {
 
 /* ── Carte : flex pour remplir l'espace ── */
 .obj-carte {
-  flex: 1 1 130px;
-  max-width: 190px;
-  background: var(--blanc1);
-  border: 1px solid var(--couleur3);
-  border-radius: 2px;
-  padding: 14px 10px;
-  text-align: center;
-  cursor: pointer;
-  position: relative !important;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  transition: border-color .2s, box-shadow .2s;
-  isolation: isolate;
+    flex: 1 1 130px;
+    max-width: 190px;
+    background: var(--blanc1);
+    padding: 14px 10px;
+    text-align: center;
+    cursor: pointer;
+    position: relative !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-right: 1px solid var(--couleur3);
+    border-left: 1px solid var(--couleur3);
+    border-top: none;
+    border-bottom: none;
+    align-items: center;
+    gap: 6px;
+    transition: border-color .2s, box-shadow .2s;
+    isolation: isolate;
 }
 
 .obj-carte:hover {
@@ -688,7 +694,8 @@ stt {
 /* BOUTIQUE → bleu/ardoise */
 .obj-carte[data-achat="BOUTIQUE"] .obj-hover {
   background: #e8edf4;
-  border: 1px solid #7692B8;
+   border-left: 1px solid #7692B8;
+  border-right: 1px solid #7692B8;
 }
 .obj-carte[data-achat="BOUTIQUE"] .obj-rang b { color: #7692B8; }
 .obj-carte[data-achat="BOUTIQUE"] .obj-tag {
@@ -700,7 +707,8 @@ stt {
 /* DONJON → doré/ambre */
 .obj-carte[data-achat="DONJON"] .obj-hover {
   background: #f4f0e4;
-  border: 1px solid #b89840;
+   border-left: 1px solid #b89840;
+  border-right: 1px solid #b89840;
 }
 .obj-carte[data-achat="DONJON"] .obj-rang b { color: #b89840; }
 .obj-carte[data-achat="DONJON"] .obj-tag {
@@ -709,11 +717,17 @@ stt {
   border-color: #b89840;
 }
 
-  .obj-carte[data-achat="EVENT"] .obj-rang b { color: #84d394; }
+  .obj-carte[data-achat="EVENT"] .obj-rang a { color: #84d394; }
 .obj-carte[data-achat="EVENT"] .obj-tag {
   color: #b89840;
   background: #d2e6dc;
   border-color: #84d394;
+}
+  
+  .obj-carte[data-achat="EVENT"] .obj-hover {
+  background: #e8edf4;
+   border-left: 1px solid #84d394;
+  border-right: 1px solid #84d394;
 }
   
 /* Petite pastille colorée en haut à droite selon source */
