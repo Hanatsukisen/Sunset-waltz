@@ -910,6 +910,13 @@ stt {
   border-color: #b89840;
 }
 
+  .obj-carte[data-achat="EVENT"] .obj-rang b { color: #84d394; }
+.obj-carte[data-achat="EVENT"] .obj-tag {
+  color: #b89840;
+  background: #d2e6dc;
+  border-color: #84d394;
+}
+  
 /* Petite pastille colorée en haut à droite selon source */
 .obj-carte::after {
   content: '';
@@ -921,7 +928,8 @@ stt {
 }
 .obj-carte[data-achat="BOUTIQUE"]::after { background: #7692B8; }
 .obj-carte[data-achat="DONJON"]::after   { background: #b89840; }
-
+.obj-carte[data-achat="EVENT"]::after   { background: #84d394; }
+  
 .obj-tag {
   display: inline-block;
   padding: 3px 7px;
@@ -999,6 +1007,7 @@ stt {
 .inv-carte .inv-rang b { font-weight:700; }
 .inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color: #7692B8; }
 .inv-carte[data-achat="DONJON"]   .inv-rang b { color: #b89840; }
+  .inv-carte[data-achat="EVENT"]   .inv-rang b { color: #84d394; }
 .inv-carte .inv-hover {
   position:absolute; top:0; left:0; right:0; bottom:0;
   color: #3a3a4a;
@@ -1012,6 +1021,7 @@ stt {
 }
 .inv-carte[data-achat="BOUTIQUE"] .inv-hover { background:#e8edf4; border:1px solid #7692B8; }
 .inv-carte[data-achat="DONJON"]   .inv-hover { background:#f4f0e4; border:1px solid #b89840; }
+  .inv-carte[data-achat="EVENT"]   .inv-hover { background:#f4f0e4; border:1px solid #84d394; }
 .inv-carte:hover .inv-hover { opacity:1; }
 .inv-tag {
   display:inline-block; padding:3px 7px;
@@ -1022,9 +1032,11 @@ stt {
 }
 .inv-carte[data-achat="BOUTIQUE"] .inv-tag { color:#7692B8; background:#f2f4f9; border-color:#7692B8; }
 .inv-carte[data-achat="DONJON"]   .inv-tag { color:#b89840; background:#faf7ee; border-color:#b89840; }
+.inv-carte[data-achat="EVENT"]   .inv-tag { color:#b89840; background:#faf7ee; border-color:#84d394; }
 .inv-carte::after {
   content:''; position:absolute; top:6px; right:6px;
   width:6px; height:6px; border-radius:50%; z-index:1;
 }
 .inv-carte[data-achat="BOUTIQUE"]::after { background:#7692B8; }
 .inv-carte[data-achat="DONJON"]::after   { background:#b89840; }
+  .inv-carte[data-achat="EVENT"]::after   { background:#84d394; }
