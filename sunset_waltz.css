@@ -775,3 +775,256 @@ stt {
  padding: 16px 0 8px;
  width: 100%;
 }
+
+/*****COLLECTION INVENTAIRE************/
+
+.obj-page::first-letter { all: unset; }
+
+.obj-section {
+  background: var(--blanc2);
+  border: 1px solid var(--couleur3);
+  padding: 18px;
+  margin-bottom: 20px;
+}
+
+.obj-titre {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--couleur2);
+  border-bottom: 1px solid var(--couleur3);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.obj-hint {
+  font-size: 9.5px;
+  color: var(--couleur3);
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.obj-grille {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* ── Carte : flex pour remplir l'espace ── */
+.obj-carte {
+  flex: 1 1 130px;
+  max-width: 190px;
+  background: var(--blanc1);
+  border: 1px solid var(--couleur3);
+  border-radius: 2px;
+  padding: 14px 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative !important;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: border-color .2s, box-shadow .2s;
+  isolation: isolate;
+}
+
+.obj-carte:hover {
+  border-color: var(--couleur2);
+  box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+.obj-carte img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+.obj-carte .obj-nom {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.obj-carte .obj-rang {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--couleur3);
+}
+
+.obj-carte .obj-rang b { font-weight: 700; }
+
+/* ── Hover overlay ── */
+.obj-carte .obj-hover {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  color: #3a3a4a;
+  font-size: 10px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s ease;
+  border-radius: 2px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.obj-carte:hover .obj-hover { opacity: 1; }
+
+/* ── Couleurs hover + tag selon source ── */
+
+/* BOUTIQUE → bleu/ardoise */
+.obj-carte[data-achat="BOUTIQUE"] .obj-hover {
+  background: #e8edf4;
+  border: 1px solid #7692B8;
+}
+.obj-carte[data-achat="BOUTIQUE"] .obj-rang b { color: #7692B8; }
+.obj-carte[data-achat="BOUTIQUE"] .obj-tag {
+  color: #7692B8;
+  background: #f2f4f9;
+  border-color: #7692B8;
+}
+
+/* DONJON → doré/ambre */
+.obj-carte[data-achat="DONJON"] .obj-hover {
+  background: #f4f0e4;
+  border: 1px solid #b89840;
+}
+.obj-carte[data-achat="DONJON"] .obj-rang b { color: #b89840; }
+.obj-carte[data-achat="DONJON"] .obj-tag {
+  color: #b89840;
+  background: #faf7ee;
+  border-color: #b89840;
+}
+
+/* Petite pastille colorée en haut à droite selon source */
+.obj-carte::after {
+  content: '';
+  position: absolute;
+  top: 6px; right: 6px;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.obj-carte[data-achat="BOUTIQUE"]::after { background: #7692B8; }
+.obj-carte[data-achat="DONJON"]::after   { background: #b89840; }
+
+.obj-tag {
+  display: inline-block;
+  padding: 3px 7px;
+  font-size: 8px;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border-radius: 2px;
+  border: 1px solid;
+}
+
+/* ── Flash copié ── */
+.obj-carte .obj-flash {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--couleur2, #7692B8);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .15s;
+  z-index: 3;
+  border-radius: 2px;
+}
+.obj-carte.copied .obj-flash { opacity: 1; }
+
+/* ── Légende source ── */
+.obj-legende {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+  font-size: 9.5px;
+  color: var(--couleur3);
+  align-items: center;
+}
+.obj-legende-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ══════════════════════════════════
+   STYLES CARTE INVENTAIRE (copiée)
+   ══════════════════════════════════ */
+.inv-carte {
+  width: 150px;
+  background: var(--blanc1, #f8f9fb);
+  border: 1px solid var(--couleur3, #c5cdd6);
+  border-radius: 2px;
+  padding: 12px 8px;
+  text-align: center;
+  position: relative !important;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  vertical-align: top;
+  isolation: isolate;
+  transition: border-color .2s;
+}
+.inv-carte:hover { border-color: var(--couleur2, #7692B8); }
+.inv-carte img { width:60px; height:60px; object-fit:contain; display:block; }
+.inv-carte .inv-nom { font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.5px; }
+.inv-carte .inv-rang { font-size:9px; text-transform:uppercase; letter-spacing:1px; color:var(--couleur3,#999); }
+.inv-carte .inv-rang b { font-weight:700; }
+.inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color: #7692B8; }
+.inv-carte[data-achat="DONJON"]   .inv-rang b { color: #b89840; }
+.inv-carte .inv-hover {
+  position:absolute; top:0; left:0; right:0; bottom:0;
+  color: #3a3a4a;
+  font-size:10px; line-height:1.6;
+  text-align:center; padding:10px 8px;
+  display:flex; flex-direction:column;
+  justify-content:center; align-items:center; gap:6px;
+  opacity:0; pointer-events:none;
+  transition:opacity .2s; border-radius:2px;
+  box-sizing:border-box; z-index:2;
+}
+.inv-carte[data-achat="BOUTIQUE"] .inv-hover { background:#e8edf4; border:1px solid #7692B8; }
+.inv-carte[data-achat="DONJON"]   .inv-hover { background:#f4f0e4; border:1px solid #b89840; }
+.inv-carte:hover .inv-hover { opacity:1; }
+.inv-tag {
+  display:inline-block; padding:3px 7px;
+  font-size:8px; font-weight:700;
+  font-family:Poppins,sans-serif;
+  text-transform:uppercase; letter-spacing:.5px;
+  border-radius:2px; border:1px solid;
+}
+.inv-carte[data-achat="BOUTIQUE"] .inv-tag { color:#7692B8; background:#f2f4f9; border-color:#7692B8; }
+.inv-carte[data-achat="DONJON"]   .inv-tag { color:#b89840; background:#faf7ee; border-color:#b89840; }
+.inv-carte::after {
+  content:''; position:absolute; top:6px; right:6px;
+  width:6px; height:6px; border-radius:50%; z-index:1;
+}
+.inv-carte[data-achat="BOUTIQUE"]::after { background:#7692B8; }
+.inv-carte[data-achat="DONJON"]::after   { background:#b89840; }
