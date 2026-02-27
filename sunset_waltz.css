@@ -510,6 +510,7 @@ stt {
 
 
 /********INVENTAIRE***********/
+
 /* ══════════════════════════════════════════
    INVENTAIRE — coller dans Admin > CSS global
    ══════════════════════════════════════════ */
@@ -574,7 +575,6 @@ stt {
 
 /* Tag inventaire */
 .inv-tag { display:inline-block !important; padding:3px 7px !important; font-size:8px !important; font-weight:700 !important; font-family:Poppins,sans-serif !important; text-transform:uppercase !important; letter-spacing:.5px !important; border-radius:2px !important; border:1px solid !important; }
-
 /*****COLLECTION INVENTAIRE************/
 
 .obj-page::first-letter { all: unset; }
