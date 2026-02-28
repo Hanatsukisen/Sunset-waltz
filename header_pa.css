@@ -373,7 +373,6 @@ position: relative;
     color: var(--textColorAccent);
     text-align: justify;
     font-weight: 300;
-    flex: 1;
 }
 /* ══════════════════════════════════════
    POPUP STAFF
