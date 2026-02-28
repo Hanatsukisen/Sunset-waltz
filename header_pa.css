@@ -734,7 +734,7 @@ width: -webkit-fill-available;
 }
 
 .event-text {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.75;
   color: var(--textColorAccent);
   font-weight: 300;
