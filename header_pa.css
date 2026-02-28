@@ -512,7 +512,7 @@ position: relative;
 .hist-text {
   padding: 16px 18px;
   font-size: 10.5px;
-
+ background:var(--neutral);
   color: var(--textColorAccent);
   text-align: justify;
   font-weight: 300;
