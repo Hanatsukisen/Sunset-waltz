@@ -243,7 +243,6 @@ text-align: center;
   grid-template-rows: auto auto;
   gap: 1px;
   background: var(--couleur1);
-  border: 1px solid var(--couleur1);
   border-top: none;
   height: 564px;
 }
