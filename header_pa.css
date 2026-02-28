@@ -549,7 +549,7 @@ position: relative;
 .nav-ic:hover { background: var(--blanc1); color: var(--couleur2); }
 
 .nav-ic-lbl {
-  font-size: 10px;
+  font-size: 6px;
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -640,7 +640,6 @@ width: -webkit-fill-available;
 .pl-card:hover img { filter: grayscale(0%); }
 
 .pl-card-name {
-  flex: 1;
   padding: 0 10px;
   font-family: var(--font);
   font-size: 12px;
