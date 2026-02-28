@@ -276,6 +276,7 @@ text-align: center;
     letter-spacing: 2px;
     line-height: 1;
     display: block;
+   text-transform: uppercase;
 }
 
 .staff-deco {
@@ -677,6 +678,7 @@ width: -webkit-fill-available;
     letter-spacing: 2px;
     line-height: 1;
     display: block;
+   text-transform: uppercase;
 }
 
 .events-sep {
