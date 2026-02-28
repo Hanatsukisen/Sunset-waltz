@@ -912,6 +912,7 @@ font-family: var(--font);
 }
 
 /* ══ ÉCHELLE ══ */
+
 .jauge-echelle {
   display: flex;
   justify-content: space-between;
