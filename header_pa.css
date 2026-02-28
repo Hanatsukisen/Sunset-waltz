@@ -832,3 +832,6 @@ width: -webkit-fill-available;
     height: 45px;
 }
 
+.nav-strip a {
+    color: var(--couleur1);
+}
