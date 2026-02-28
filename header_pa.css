@@ -109,7 +109,7 @@ text-align: center;
     color: var(--couleur1);
     padding: 3px 12px;
     border: 1px solid var(--couleur1);
-    background: var(--blanc1);
+    background: var(--blanc2);
     backdrop-filter: blur(4px);
 }
 
