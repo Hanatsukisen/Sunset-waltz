@@ -299,7 +299,6 @@ text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1px;
-  background: var(--couleur1);
   flex-shrink: 0;
 }
 
