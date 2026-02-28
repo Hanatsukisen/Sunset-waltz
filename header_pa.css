@@ -884,9 +884,6 @@ jauge-wrap {
 }
 
 .jauge-fill {
-  /* ← MODIFIE CETTE VALEUR pour changer le niveau (0% à 100%) */
-  --valeur: 68%;
-
   height: 100%;
   width: var(--valeur);
   background: linear-gradient(to right, var(--c2), #a8c0d0);
