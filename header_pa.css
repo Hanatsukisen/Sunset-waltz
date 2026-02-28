@@ -884,11 +884,11 @@ font-family: var(--font);
 }
 
 .jauge-fill {
-  height: 100%;
-  width: var(--valeur);
-  background: linear-gradient(to right, var(--c2), #a8c0d0);
-  position: relative;
-  transition: width .8s ease;
+      height: 100%;
+    width: var(--valeur);
+    background: linear-gradient(to right, var(--couleur2), var(--couleur1));
+    position: relative;
+    transition: width .8s ease;
 }
 
 /* Point lumineux au bout de la barre */
@@ -901,7 +901,7 @@ font-family: var(--font);
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--c2);
+  background: var(var(--couleur1);
   box-shadow: 0 0 0 0 rgba(118,146,184,.6);
   animation: pulse 2s ease-out infinite;
 }
