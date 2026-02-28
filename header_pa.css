@@ -900,7 +900,7 @@ font-family: var(--font);
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(var(--couleur1);
+  background: var(--couleur1);
   box-shadow: 0 0 0 0 rgba(118,146,184,.6);
   animation: pulse 2s ease-out infinite;
 }
