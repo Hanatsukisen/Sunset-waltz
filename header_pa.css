@@ -712,7 +712,6 @@ width: -webkit-fill-available;
     font-family: var(--font3);
     font-size: 36px;
     color: var(--couleur1);
-    font-weight: 700;
     line-height: .85;
     flex-shrink: 0;
     margin-left: -6px;
