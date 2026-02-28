@@ -827,3 +827,15 @@ width: -webkit-fill-available;
 .nav-strip a {
     color: var(--couleur1)!important;
 }
+
+
+
+.discord_link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--blanc2);
+    padding: 10px;
+    border: 1px dashed var(--couleur1);
+}
+
