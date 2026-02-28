@@ -381,7 +381,7 @@ position: relative;
 .staff-popup-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(58,53,48,.4);
+  background: var(--transp1);
   backdrop-filter: blur(3px);
   z-index: 9999;
   display: flex;
@@ -503,12 +503,7 @@ position: relative;
   align-items: center;
   gap: 10px;
 }
-.hist-section-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--couleur1);
-}
+
 
 .hist-text {
   padding: 16px 18px;
@@ -765,12 +760,7 @@ width: -webkit-fill-available;
   gap: 8px;
   border-bottom: 1px solid var(--couleur1);
 }
-.chrono-label-head::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--couleur1);
-}
+
 
 .chrono-list {
   max-height: 130px;
