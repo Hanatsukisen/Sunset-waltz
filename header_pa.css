@@ -817,4 +817,14 @@ width: -webkit-fill-available;
     display: flex;
     gap: 10px;
 }
-  
+
+
+.staff-account-icon img {
+    width: 45px;
+    filter: grayscale(1);
+    outline: 1px solid var(--couleur1);
+    outline-offset: 3px;
+    object-fit: cover;
+    height: 45px;
+}
+
