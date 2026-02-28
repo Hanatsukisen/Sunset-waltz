@@ -835,5 +835,5 @@ width: -webkit-fill-available;
 }
 
 .nav-strip a {
-    color: var(--couleur1);
+    color: var(--couleur1)!important;
 }
