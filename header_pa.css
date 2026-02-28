@@ -372,7 +372,6 @@ position: relative;
     text-align: justify;
     font-weight: 300;
     flex: 1;
-     background: linear-gradient(45deg, var(--transp2), var(--transp3), transparent);
 }
 /* ══════════════════════════════════════
    POPUP STAFF
