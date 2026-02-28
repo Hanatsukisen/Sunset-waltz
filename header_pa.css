@@ -787,12 +787,15 @@ width: -webkit-fill-available;
   white-space: nowrap;
   flex-shrink: 0;
   opacity: .7;
+      font-size:12px;
+
 }
 
 .chrono-txt {
   color: var(--textColorAccent);
   line-height: 1.5;
   font-weight: 300;
+   font-size:12px;
 }
 
 .staff-link-icon img {
