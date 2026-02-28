@@ -246,6 +246,7 @@ text-align: center;
   border-top: none;
   height: 564px;
    border: 1px solid var(--couleur2);
+   box-shadow: 0 0 8px 0 #00000021;
 }
 
 .pa-cell {
