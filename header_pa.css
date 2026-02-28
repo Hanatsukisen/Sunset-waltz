@@ -856,20 +856,20 @@ jauge-wrap {
 }
 
 .jauge-titre {
-  font-family: 'Bigshot One', serif;
-  font-size: 20px;
-  color: var(--text);
-  letter-spacing: 1px;
-  line-height: 1;
+font-family: var(--font);
+    font-size: 12px;
+    color: var(--textColorAccent);
+    letter-spacing: 1px;
+    line-height: 1;
 }
 
 .jauge-titre span { color: var(--c2); }
 
 .jauge-pourcent {
-  font-family: 'Bigshot One', serif;
-  font-size: 28px;
-  color: var(--c2);
-  line-height: 1;
+font-family: var(--font);
+    font-size: 20px;
+    color: var(--c2);
+    line-height: 1;
 }
 
 /* ══ BARRE ══ */
