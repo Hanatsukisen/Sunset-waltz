@@ -373,6 +373,7 @@ position: relative;
     font-weight: 300;
     flex: 1;
     border-top: 1px solid var(--couleur1);
+     background: linear-gradient(45deg, var(--transp2), var(--transp3), transparent);
 }
 /* ══════════════════════════════════════
    POPUP STAFF
