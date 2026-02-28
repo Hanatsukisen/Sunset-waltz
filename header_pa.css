@@ -34,12 +34,12 @@
 
 /* ── HERO ─────────────────────────── */
 .pa-hero {
-position: relative;
-    height: 130px;
+    position: relative;
     overflow: hidden;
-    /* background: var(--b3); */
     flex-direction: column;
     display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .pa-hero-img {
