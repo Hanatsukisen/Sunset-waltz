@@ -470,7 +470,6 @@ img.loop_post_img img {
   gap: 0;
 }
 .lp_tweet {
-  border-top: 1px solid var(--couleur3);
   background: var(--blanc1);
   border-bottom: 1px solid var(--couleur3);
   padding: 12px 14px;
@@ -546,7 +545,6 @@ img.loop_post_img img {
   align-items: center;
 }
 .lp_tweet_pin {
-  border-top: 1px solid var(--couleur3);
   background: var(--blanc1);
   border-bottom: 1px solid var(--couleur3);
   padding: 12px 14px;
