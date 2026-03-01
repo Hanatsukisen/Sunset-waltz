@@ -166,9 +166,9 @@ img.loop_post_img img {
 }
 .loop_post_text {
   padding: 10px 14px;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.75;
-  color: var(--couleur3);
+  color: var(--textColorAccent);
   text-align: justify;
 }
 .loop_post_text.only {
