@@ -300,3 +300,8 @@ img.loop_post_img img {
   display: flex;
   justify-content: center;
 }
+
+.lp_post_container {
+    width: 600px;
+    margin: auto;
+}
