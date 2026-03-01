@@ -13,7 +13,7 @@
   justify-content: space-between;
   padding: 10px 14px;
   border-bottom: 1px solid var(--couleur3);
-  background: var(--blanc1);
+  background: var(--blanc2);
 }
 .loop_header_logo {
   font-size: 18px;
