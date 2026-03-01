@@ -100,6 +100,7 @@
   align-items: center;
   gap: 10px;
   padding: 10px 14px;
+  text-align: left;
 }
 .loop_post_avatar {
   width: 36px;
