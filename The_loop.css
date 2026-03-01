@@ -378,6 +378,7 @@ img.loop_post_img img {
   border: 1px solid var(--couleur2);
   color: var(--couleur2);
   margin-top: 4px;
+  background:var(--blanc2);
 }
 .lp_profil_badge.priv {
   border-color: var(--couleur3);
