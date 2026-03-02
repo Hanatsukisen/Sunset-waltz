@@ -389,6 +389,7 @@ img.loop_post_img img {
   border-top: 1px solid var(--couleur3);
   border-bottom: 1px solid var(--couleur3);
   margin-bottom: 10px;
+  background: var(--blanc2);
 }
 .lp_profil_stat {
   flex: 1;
