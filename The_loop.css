@@ -479,7 +479,7 @@ img.loop_post_img img {
   gap: 0;
 }
 .lp_tweet {
-  background: var(--blanc1);
+  background: var(--blanc2);
   border-bottom: 1px solid var(--couleur3);
   padding: 12px 14px;
 }
