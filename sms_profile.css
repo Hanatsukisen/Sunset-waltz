@@ -1,46 +1,194 @@
 /* SMS DUO */
-.sms_duo {
-  display: flex; align-items: center; gap: 14px;
-  padding: 16px 20px;
-  background: var(--blanc2, #f9f9f9);
-  border-radius: 14px;
-  border: 1px solid var(--couleur1, #eee);
-  margin-bottom: 20px;
-}
-.sms_duo_avatars { display: flex; }
-.sms_duo_avatars img {
-  width: 46px; height: 46px;
-  border-radius: 50%; object-fit: cover;
-  border: 2px solid #fff;
-}
-.sms_duo_avatars img:nth-child(2) { margin-left: -12px; }
-.sms_duo_members { display: flex; gap: 6px; flex-wrap: wrap; margin-left: 14px; }
-.sms_member a {
-  font-size: 12px; font-weight: 600;
-  color: var(--couleur1);
-  text-decoration: none;
-  padding: 3px 10px;
-  border-radius: 20px;
+.sms_container {
+  margin: auto;
+  width: 380px;
+  background: var(--blanc2);
   border: 1px solid var(--couleur1);
-  display: inline-block;
+  border-radius: 12px;
+  padding: 22px 20px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.sms_container::before {
+  content: "SMS";
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  opacity: 0.4;
+}
+.sms_duo_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0 10px;
+}
+.sms_duo_icons img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--blanc2);
+  outline: 1px solid var(--couleur1);
+  transition: transform 0.2s ease;
+}
+.sms_duo_icons img:first-child {
+  margin-right: -10px;
+  z-index: 1;
+}
+.sms_duo_icons img:last-child {
+  margin-left: -10px;
+}
+.sms_duo_icons img:hover {
+  transform: scale(1.07) translateY(-2px);
+  z-index: 2;
+}
+.sms_separator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 20px 14px;
+}
+.sms_separator::before,
+.sms_separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--couleur1);
+  opacity: 0.2;
+}
+.sms_separator span {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  opacity: 0.5;
+}
+.sms_name_tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.sms_name_tags span {
+  background: var(--blanc1);
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--couleur1);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--couleur1);
+  letter-spacing: 0.03em;
+  transition: background 0.2s;
+}
+.sms_name_tags span:hover {
+  background: var(--couleur1);
+  color: var(--blanc2);
+}
+.sms_amp {
+  font-size: 13px;
+  opacity: 0.4;
+  color: var(--couleur1);
 }
 
+
 /* SMS GROUPE */
-.sms_group {
-  padding: 18px 20px;
-  background: var(--blanc2, #f9f9f9);
-  border-radius: 14px;
-  border: 1px solid var(--couleur1, #eee);
-  margin-bottom: 20px;
+.sms_group_container {
+  margin: auto;
+  width: 380px;
+  background: var(--blanc2);
+  border: 1px solid var(--couleur1);
+  border-radius: 12px;
+  padding: 22px 20px 18px;
+  position: relative;
+  overflow: hidden;
 }
-.sms_group_avatar img {
-  width: 56px; height: 56px;
-  border-radius: 14px; object-fit: cover;
-  display: block; margin-bottom: 10px;
-}
-.sms_group-name {
-  font-weight: 700; font-size: 15px;
-  margin-bottom: 10px;
+.sms_group_container::before {
+  content: "GROUPE";
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
   color: var(--couleur1);
+  opacity: 0.4;
 }
-.sms_group_members { display: flex; gap: 6px; flex-wrap: wrap; }
+.sms_group_photo {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0 12px;
+}
+.sms_group_photo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid var(--blanc2);
+  outline: 1px solid var(--couleur1);
+  transition: transform 0.2s ease;
+}
+.sms_group_photo img:hover {
+  transform: scale(1.05);
+}
+.sms_group_name {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  margin-bottom: 14px;
+}
+.sms_separator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 20px 14px;
+}
+.sms_separator::before,
+.sms_separator::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--couleur1);
+  opacity: 0.2;
+}
+.sms_separator span {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  opacity: 0.5;
+}
+.sms_name_tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.sms_name_tags span {
+  background: var(--blanc1);
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: 1px solid var(--couleur1);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--couleur1);
+  letter-spacing: 0.03em;
+  transition: background 0.2s;
+}
+.sms_name_tags span:hover {
+  background: var(--couleur1);
+  color: var(--blanc2);
+}
+
