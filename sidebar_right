@@ -1,0 +1,303 @@
+.sidebar_right {
+  position: fixed;
+  right: -262px;
+  top: 45px;
+  bottom: 0;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  z-index: 9999;
+  transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar_right:hover {
+  right: 0;
+}
+
+.side_tab {
+  width: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--blanc1), transparent);
+  border-left: 2px solid var(--couleur2);
+  flex-shrink: 0;
+}
+.side_tab svg {
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+.sidebar_right:hover .side_tab svg {
+  opacity: 1;
+}
+
+.sidbar_rightmain {
+  width: 262px;
+  background: var(--blanc1);
+  border-left: 1px solid var(--couleur1);
+  border-top: 1px solid var(--couleur1);
+  border-bottom: 1px solid var(--couleur1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--couleur3) transparent;
+}
+.sidbar_rightmain::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--couleur2), transparent);
+  flex-shrink: 0;
+}
+
+.side_section {
+  padding: 16px 16px 14px;
+  border-bottom: 1px solid rgba(106, 143, 168, 0.1);
+}
+.side_section:last-child {
+  border-bottom: none;
+}
+
+.side_section_title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--couleur2);
+  margin-bottom: 12px;
+}
+.side_section_title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--couleur3), transparent);
+  opacity: 0.4;
+}
+
+/* ══ ÉVÉNEMENT ══ */
+.side_event {
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--textColorAccent);
+  font-weight: 300;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+.side_event_links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.side_event_links a {
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  background: var(--transp2);
+  border: 1px solid var(--couleur3);
+  padding: 4px 8px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.side_event_links a:hover {
+  background: var(--couleur1);
+  color: var(--blanc2);
+  border-color: var(--couleur1);
+}
+
+/* ══ MENU RPG ══ */
+.rpg_menu {
+  position: relative;
+  background: linear-gradient(160deg, #e8f0f5 0%, #dce8f0 100%);
+  border: 1px solid var(--couleur2);
+  border-radius: 2px;
+  padding: 6px 0;
+  overflow: hidden;
+}
+
+/* Coins décoratifs style FF */
+.rpg_menu::before,
+.rpg_menu::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-color: var(--couleur2);
+  border-style: solid;
+  opacity: 0.6;
+}
+.rpg_menu::before {
+  top: 4px;
+  left: 4px;
+  border-width: 1px 0 0 1px;
+}
+.rpg_menu::after {
+  bottom: 4px;
+  right: 4px;
+  border-width: 0 1px 1px 0;
+}
+
+/* Item du menu */
+.rpg_item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 14px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.15s;
+  text-decoration: none;
+}
+
+.rpg_item:hover,
+.rpg_item.active {
+  background: rgba(106, 143, 168, 0.12);
+}
+
+/* Curseur animé style FF */
+.rpg_cursor {
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.15s;
+  position: relative;
+}
+
+.rpg_item:hover .rpg_cursor,
+.rpg_item.active .rpg_cursor {
+  opacity: 1;
+  animation: rpg_blink 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes rpg_blink {
+  from {
+    transform: translateX(0);
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(3px);
+    opacity: 1;
+  }
+}
+
+/* Triangle curseur style FF */
+.rpg_cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-left: 8px solid var(--couleur1);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
+/* Icône */
+.rpg_icon {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.rpg_item:hover .rpg_icon,
+.rpg_item.active .rpg_icon {
+  opacity: 1;
+}
+
+/* Texte */
+.rpg_label {
+  flex: 1;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--textColorAccent);
+  transition: color 0.15s;
+}
+.rpg_item:hover .rpg_label,
+.rpg_item.active .rpg_label {
+  color: var(--couleur1);
+  font-weight: 600;
+}
+
+/* Sous-label */
+.rpg_sublabel {
+  font-size: 8px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: var(--couleur3);
+  text-transform: none;
+}
+
+/* Séparateur menu */
+.rpg_sep {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(106, 143, 168, 0.2),
+    transparent
+  );
+  margin: 4px 16px;
+}
+
+/* ══ NAVIGATION ══ */
+.side_nav_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+.side_nav_grid a {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--textColorAccent);
+  background: var(--blanc2);
+  border: 1px solid rgba(106, 143, 168, 0.2);
+  padding: 7px 6px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 1px;
+}
+.side_nav_grid a:hover {
+  background: var(--transp2);
+  border-color: var(--couleur2);
+  color: var(--couleur1);
+}
+.side_nav_full {
+  margin-bottom: 4px;
+}
+.side_nav_full a {
+  display: block;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--couleur1);
+  background: var(--blanc2);
+  border: 1px solid var(--couleur2);
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 1px;
+}
+.side_nav_full a:hover {
+  background: var(--couleur1);
+  color: var(--blanc2);
+}
