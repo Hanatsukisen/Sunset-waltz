@@ -116,7 +116,7 @@
 /* ══ MENU RPG ══ */
 .rpg_menu {
   position: relative;
-  background: linear-gradient(160deg, #e8f0f5 0%, #dce8f0 100%);
+  background: var(--transp1);
   border: 1px solid var(--couleur2);
   border-radius: 2px;
   padding: 6px 0;
@@ -196,7 +196,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  border-left: 8px solid var(--couleur1);
+  border-left: 8px solid var(--textColorAccent);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
