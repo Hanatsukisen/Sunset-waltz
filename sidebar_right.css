@@ -45,13 +45,7 @@
   scrollbar-width: thin;
   scrollbar-color: var(--couleur3) transparent;
 }
-.sidbar_rightmain::before {
-  content: "";
-  display: block;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--couleur2), transparent);
-  flex-shrink: 0;
-}
+
 
 .side_section {
   padding: 16px 16px 14px;
