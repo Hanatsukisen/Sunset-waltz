@@ -110,7 +110,7 @@
 /* ══ MENU RPG ══ */
 .rpg_menu {
   position: relative;
-  background: var(--transp1);
+  background: var(--blanc2);
   border: 1px solid var(--couleur2);
   border-radius: 2px;
   padding: 6px 0;
