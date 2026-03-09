@@ -23,6 +23,7 @@
   background: linear-gradient(180deg, var(--blanc1), transparent);
   border-left: 2px solid var(--couleur2);
   flex-shrink: 0;
+  backdrop-filter: blur(5px);
 }
 .side_tab svg {
   opacity: 0.5;
