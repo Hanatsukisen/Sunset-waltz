@@ -1294,7 +1294,7 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
     text-align: center;
     align-content: center;
     width: 100%;
-    font-size: 65;
+    font-size: 65px;
     font-family: var(--font);
     text-shadow: -1px -1px 0 var(--blanc1), 1px -1px 0 var(--blanc1), -1px 1px 0 var(--blanc1), 1px 1px 0 var(--blanc1);
     line-height: 60px;
