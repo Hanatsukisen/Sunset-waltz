@@ -310,14 +310,15 @@ span.pic_shop img {
   width: 60px;
 }
 .shop_object {
-  align-items: anchor-center;
-  border-radius: 10px;
-  border-right: 1px solid var(--couleur3);
-  border-left: 1px solid var(--couleur3);
-  background: var(--blanc1);
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
+    align-items: anchor-center;
+    border-radius: 10px;
+    border-right: 1px solid var(--couleur3);
+    border-left: 1px solid var(--couleur3);
+    background: var(--blanc1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
 }
 .shop_objectslist {
   display: flex;
