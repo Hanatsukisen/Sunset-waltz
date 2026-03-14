@@ -733,31 +733,7 @@ stt {
 .inv-carte[data-achat="EVENT"] .inv-tag { color:#84d394; background:#d2e6dc; border-color:#84d394; }
 .inv-carte[data-achat="EVENT"]::after { background: #84d394; }
 
-/* ══ COULEURS PAR SOURCE ══ */
 
-/* BOUTIQUE */
-.inv-carte[data-achat="BOUTIQUE"] { border-color: rgba(118,146,184,.3); }
-.inv-carte[data-achat="BOUTIQUE"]:hover { border-color: #7692B8; }
-.inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color: #7692B8; }
-.inv-carte[data-achat="BOUTIQUE"] .inv-hover { background: #e8edf4; border-left: 1px solid #7692B8; border-right: 1px solid #7692B8; }
-.inv-carte[data-achat="BOUTIQUE"] .inv-tag { color: #7692B8; background: #f2f4f9; border-color: #7692B8; }
-.inv-carte[data-achat="BOUTIQUE"]::after { background: #7692B8; }
-
-/* DONJON */
-.inv-carte[data-achat="DONJON"] { border-color: rgba(184,152,64,.3); }
-.inv-carte[data-achat="DONJON"]:hover { border-color: #b89840; }
-.inv-carte[data-achat="DONJON"] .inv-rang b { color: #b89840; }
-.inv-carte[data-achat="DONJON"] .inv-hover { background: #f4f0e4; border-left: 1px solid #b89840; border-right: 1px solid #b89840; }
-.inv-carte[data-achat="DONJON"] .inv-tag { color: #b89840; background: #faf7ee; border-color: #b89840; }
-.inv-carte[data-achat="DONJON"]::after { background: #b89840; }
-
-/* EVENT */
-.inv-carte[data-achat="EVENT"] { border-color: rgba(132,211,148,.3); }
-.inv-carte[data-achat="EVENT"]:hover { border-color: #84d394; }
-.inv-carte[data-achat="EVENT"] .inv-rang b { color: #84d394; }
-.inv-carte[data-achat="EVENT"] .inv-hover { background: #E9F4E8; border-left: 1px solid #84d394; border-right: 1px solid #84d394; }
-.inv-carte[data-achat="EVENT"] .inv-tag { color: #84d394; background: #d2e6dc; border-color: #84d394; }
-.inv-carte[data-achat="EVENT"]::after { background: #84d394; }
 
 /*****COLLECTION INVENTAIRE************/
 
