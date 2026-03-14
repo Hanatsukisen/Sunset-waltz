@@ -511,6 +511,8 @@ stt {
 
 /********INVENTAIRE***********/
 
+/********INVENTAIRE***********/
+
 /* ══════════════════════════════════════════
    INVENTAIRE — coller dans Admin > CSS global
    ══════════════════════════════════════════ */
@@ -656,32 +658,36 @@ stt {
 }
 .inv-rang b { font-weight: 700; }
 
-/* ══ HOVER OVERLAY (ancien système — conservé pour compatibilité) ══ */
+/* ══ HOVER caché — utilisé comme source de données pour le tooltip JS ══ */
 .inv-carte .inv-hover { display: none; }
 
-/* ══ DETAILS / SUMMARY (nouveau système) ══ */
-.inv-carte details { width: 100%; margin-top: 4px; }
-.inv-carte details summary {
-  font-size: 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  list-style: none;
-  padding: 4px 0 2px;
-  border-top: 1px solid var(--couleur3);
-  text-align: center;
+/* ══ TOOLTIP JS (même système que la collection) ══ */
+#inv-tooltip {
+  position: fixed;
+  width: 180px;
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 10px;
+  font-size: 10px;
+  line-height: 1.65;
+  color: #3a3a4a;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.15);
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .15s ease;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #7692B8 transparent;
 }
-.inv-carte details summary::-webkit-details-marker { display: none; }
-.inv-carte details:not([open]) summary::after { content: ' ▾'; }
-.inv-carte details[open] summary::after { content: ' ▴'; }
-.inv-carte details .inv-desc {
-  font-size: 9.5px;
-  line-height: 1.75;
-  color: var(--couleur3);
-  text-align: left;
-  padding: 7px 4px 2px;
-}
+#inv-tooltip::-webkit-scrollbar { width: 4px; }
+#inv-tooltip::-webkit-scrollbar-thumb { background: #7692B8; border-radius: 2px; }
+#inv-tooltip.visible { opacity: 1; }
+#inv-tooltip .inv-tag { display: block; margin: 8px auto 0; width: fit-content; }
+#inv-tooltip.src-BOUTIQUE { background:#e8edf4; border-left:2px solid #7692B8; border-right:2px solid #7692B8; }
+#inv-tooltip.src-DONJON   { background:#f4f0e4; border-left:2px solid #b89840; border-right:2px solid #b89840; }
+#inv-tooltip.src-EVENT    { background:#E9F4E8; border-left:2px solid #84d394; border-right:2px solid #84d394; }
 
 /* ══ TAG ══ */
 .inv-tag {
@@ -694,7 +700,6 @@ stt {
   letter-spacing: .5px;
   border-radius: 2px;
   border: 1px solid;
-  margin-top: 5px;
 }
 
 /* ══ PASTILLE ══ */
@@ -713,7 +718,6 @@ stt {
 .inv-carte[data-achat="BOUTIQUE"] { border-color: rgba(118,146,184,.3); }
 .inv-carte[data-achat="BOUTIQUE"]:hover { border-color: #7692B8; }
 .inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color: #7692B8; }
-.inv-carte[data-achat="BOUTIQUE"] details summary { color: #7692B8; }
 .inv-carte[data-achat="BOUTIQUE"] .inv-tag { color:#7692B8; background:#f2f4f9; border-color:#7692B8; }
 .inv-carte[data-achat="BOUTIQUE"]::after { background: #7692B8; }
 
@@ -721,7 +725,6 @@ stt {
 .inv-carte[data-achat="DONJON"] { border-color: rgba(184,152,64,.3); }
 .inv-carte[data-achat="DONJON"]:hover { border-color: #b89840; }
 .inv-carte[data-achat="DONJON"] .inv-rang b { color: #b89840; }
-.inv-carte[data-achat="DONJON"] details summary { color: #b89840; }
 .inv-carte[data-achat="DONJON"] .inv-tag { color:#b89840; background:#faf7ee; border-color:#b89840; }
 .inv-carte[data-achat="DONJON"]::after { background: #b89840; }
 
@@ -729,11 +732,8 @@ stt {
 .inv-carte[data-achat="EVENT"] { border-color: rgba(132,211,148,.3); }
 .inv-carte[data-achat="EVENT"]:hover { border-color: #84d394; }
 .inv-carte[data-achat="EVENT"] .inv-rang b { color: #84d394; }
-.inv-carte[data-achat="EVENT"] details summary { color: #84d394; }
 .inv-carte[data-achat="EVENT"] .inv-tag { color:#84d394; background:#d2e6dc; border-color:#84d394; }
 .inv-carte[data-achat="EVENT"]::after { background: #84d394; }
-
-
 
 /*****COLLECTION INVENTAIRE************/
 
