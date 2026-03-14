@@ -697,6 +697,14 @@ stt {
 
 .obj-carte:hover .obj-hover { opacity: 1; }
 
+
+.inv-carte .inv-hover {
+  overflow-y: auto;
+  align-items: flex-start;
+  text-align: left;
+}
+
+
 /* ── Couleurs hover + tag selon source ── */
 
 /* BOUTIQUE → bleu/ardoise */
