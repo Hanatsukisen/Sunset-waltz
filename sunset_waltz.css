@@ -509,7 +509,6 @@ stt {
 .titllehnarp1 {margin-top: 270px;font-size: 50px;position: absolute;text-align: left;;line-height: 50px;margin-left: 113px;width: 285px;color: var(--blanc1);z-index: 2;text-shadow: 2px 0 var(--couleur1), -2px 0 var(--couleur1), 0 2px var(--couleur1), 0 -2px var(--couleur1), 1px 1px var(--couleur1), -1px -1px var(--couleur1), 1px -1px var(--couleur1), -1px 1px var(--couleur1);}
 
 
-
 /********INVENTAIRE***********/
 
 /* ══════════════════════════════════════════
@@ -657,28 +656,32 @@ stt {
 }
 .inv-rang b { font-weight: 700; }
 
-/* ══ HOVER OVERLAY ══ */
-.inv-carte .inv-hover {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  font-size: 10px;
-  line-height: 1.6;
+/* ══ HOVER OVERLAY (ancien système — conservé pour compatibilité) ══ */
+.inv-carte .inv-hover { display: none; }
+
+/* ══ DETAILS / SUMMARY (nouveau système) ══ */
+.inv-carte details { width: 100%; margin-top: 4px; }
+.inv-carte details summary {
+  font-size: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  list-style: none;
+  padding: 4px 0 2px;
+  border-top: 1px solid var(--couleur3);
   text-align: center;
-  padding: 10px 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .2s ease;
-  border-radius: 2px;
-  box-sizing: border-box;
-  z-index: 2;
-  color: #3a3a4a;
 }
-.inv-carte:hover .inv-hover { opacity: 1; }
+.inv-carte details summary::-webkit-details-marker { display: none; }
+.inv-carte details:not([open]) summary::after { content: ' ▾'; }
+.inv-carte details[open] summary::after { content: ' ▴'; }
+.inv-carte details .inv-desc {
+  font-size: 9.5px;
+  line-height: 1.75;
+  color: var(--couleur3);
+  text-align: left;
+  padding: 7px 4px 2px;
+}
 
 /* ══ TAG ══ */
 .inv-tag {
@@ -691,6 +694,7 @@ stt {
   letter-spacing: .5px;
   border-radius: 2px;
   border: 1px solid;
+  margin-top: 5px;
 }
 
 /* ══ PASTILLE ══ */
@@ -702,6 +706,32 @@ stt {
   border-radius: 50%;
   z-index: 1;
 }
+
+/* ══ COULEURS PAR SOURCE ══ */
+
+/* BOUTIQUE */
+.inv-carte[data-achat="BOUTIQUE"] { border-color: rgba(118,146,184,.3); }
+.inv-carte[data-achat="BOUTIQUE"]:hover { border-color: #7692B8; }
+.inv-carte[data-achat="BOUTIQUE"] .inv-rang b { color: #7692B8; }
+.inv-carte[data-achat="BOUTIQUE"] details summary { color: #7692B8; }
+.inv-carte[data-achat="BOUTIQUE"] .inv-tag { color:#7692B8; background:#f2f4f9; border-color:#7692B8; }
+.inv-carte[data-achat="BOUTIQUE"]::after { background: #7692B8; }
+
+/* DONJON */
+.inv-carte[data-achat="DONJON"] { border-color: rgba(184,152,64,.3); }
+.inv-carte[data-achat="DONJON"]:hover { border-color: #b89840; }
+.inv-carte[data-achat="DONJON"] .inv-rang b { color: #b89840; }
+.inv-carte[data-achat="DONJON"] details summary { color: #b89840; }
+.inv-carte[data-achat="DONJON"] .inv-tag { color:#b89840; background:#faf7ee; border-color:#b89840; }
+.inv-carte[data-achat="DONJON"]::after { background: #b89840; }
+
+/* EVENT */
+.inv-carte[data-achat="EVENT"] { border-color: rgba(132,211,148,.3); }
+.inv-carte[data-achat="EVENT"]:hover { border-color: #84d394; }
+.inv-carte[data-achat="EVENT"] .inv-rang b { color: #84d394; }
+.inv-carte[data-achat="EVENT"] details summary { color: #84d394; }
+.inv-carte[data-achat="EVENT"] .inv-tag { color:#84d394; background:#d2e6dc; border-color:#84d394; }
+.inv-carte[data-achat="EVENT"]::after { background: #84d394; }
 
 /* ══ COULEURS PAR SOURCE ══ */
 
