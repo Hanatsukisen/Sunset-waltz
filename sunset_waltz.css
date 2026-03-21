@@ -95,6 +95,7 @@ c1 {
     width: auto;
     display: flex;
     margin-left: 60px;
+    margin-top: -5px;
     flex-direction: row;
     justify-content: space-evenly;
     border-bottom: 1px solid var(--couleur3);
