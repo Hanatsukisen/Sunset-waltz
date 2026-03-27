@@ -1235,8 +1235,12 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
   .profile_content label {
     font-size: 12px;
 }
-  
-  /****/
+
+
+div.header_profile > div.gif_profile_right > div#field_id-13{display:none;}
+ 
+
+/****/
   
   .anton-regular {font-family: "Anton", sans-serif;font-weight: 400;font-style: normal;}
   .rubik-mono-one-regular {font-family: "Rubik Mono One", monospace;font-weight: 400;font-style: normal;}
