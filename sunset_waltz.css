@@ -11,8 +11,8 @@
   flex-direction: row;
 }
 .f_sidebar {
-background: var(--blanc2);
-    width: 685px!important;
+    background: var(--blanc2);
+    width: 664px !important;
     height: 60px;
     position: absolute;
     transform: rotate(-90deg);
@@ -20,8 +20,8 @@ background: var(--blanc2);
     align-items: center;
     justify-content: space-around;
     font-family: poppins;
-    margin-left: -312px;
-    margin-top: 313px;
+    margin-left: -302px;
+    margin-top: 302px;
     letter-spacing: 1px;
     font-size: 9px;
     font-weight: 800;
