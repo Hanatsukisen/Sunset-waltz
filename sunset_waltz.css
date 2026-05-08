@@ -12,7 +12,7 @@
 }
 .f_sidebar {
     background: var(--blanc2);
-    width: 664px !important;
+    width: 662px !important;
     height: 60px;
     position: absolute;
     transform: rotate(-90deg);
@@ -20,8 +20,8 @@
     align-items: center;
     justify-content: space-around;
     font-family: poppins;
-    margin-left: -302px;
-    margin-top: 302px;
+    margin-left: -300px;
+    margin-top: 301px;
     letter-spacing: 1px;
     font-size: 9px;
     font-weight: 800;
