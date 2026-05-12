@@ -67,15 +67,10 @@ b1 { color: var(--couleur2); }
 .f_part1 { flex: 1; }
 .f_part1_maininfos {
   background: var(--blanc2); padding: 12px 20px;
-  height: 220px; overflow-y: auto;
-  border-bottom: var(--border);
-  display: flex; flex-direction: column; gap: 7px;
+ overflow-y: auto;
+  border-bottom: var(--border);font-size: 11px;
 }
-.f_part1_maininfos p {
-  display: flex; align-items: baseline;
-  gap: 7px; line-height: 1.5;
-  color: var(--couleur1); font-size: 11px;
-}
+
  
 c1 {
   display: inline-block;
