@@ -1231,7 +1231,7 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
   
   div.header_profile > div.gif_profile_right > div#field_id9, div.header_profile > div.gif_profile_right > div#field_id1,  div.header_profile > div.gif_profile_right > div#field_id6, div.header_profile > div.gif_profile_right > div#field_id10, 
   div.header_profile > div.gif_profile_right > div#field_id4, div.header_profile > div.gif_profile_right > div#field_id11,  div.header_profile > div.gif_profile_right > div#field_id3,  div.header_profile > div.gif_profile_right > div#field_id2,
-  div.header_profile > div.gif_profile_right > div#field_id7, div.header_profile > div.gif_profile_right > div#field_id8, div.header_profile > div.gif_profile_right > div#field_id-6, div.header_profile > div.gif_profile_right > div#field_id-4, div.header_profile > div.gif_profile_right > div#field_id-11,  div.header_profile > div.gif_profile_right > div#field_id-13    {display:none;}
+  div.header_profile > div.gif_profile_right > div#field_id7, div.header_profile > div.gif_profile_right > div#field_id8, div.header_profile > div.gif_profile_right > div#field_id-6, div.header_profile > div.gif_profile_right > div#field_id-4, div.header_profile > div.gif_profile_right > div#field_id-11,  div.header_profile > div.gif_profile_right > div#field_id-13, div.header_profile > div.gif_profile_right > div#field_id13   {display:none;}
   .profile_content label {
     font-size: 12px;
 }
