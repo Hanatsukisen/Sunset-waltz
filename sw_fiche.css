@@ -67,7 +67,7 @@ b1 { color: var(--couleur2); }
 .f_part1 { flex: 1; }
 .f_part1_maininfos {
   background: var(--blanc2); padding: 12px 20px;
- overflow-y: auto;
+ overflow-y: auto;    height: 220px;
   border-bottom: var(--border);font-size: 11px;
 }
 
