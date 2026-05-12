@@ -11,12 +11,11 @@
 .f_side { width: 54px; flex-shrink: 0; position: relative; }
 .f_sidebar {
 position: absolute;
-    width: 642px;
+    width: 633px !important;
     height: 54px;
     background: var(--blanc2);
     border-bottom: var(--border);
     transform: rotate(-90deg) translateX(-296px);
-    transform-origin: top left;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -27,7 +26,8 @@ position: absolute;
     text-transform: uppercase;
     padding: 0 12px;
     gap: 8px;
-    margin-top: 346px;
+    margin-top: -6px;
+    margin-left: -289px;
 }
 .f_faceclaim { color: var(--couleur3); }
 .f_groupe    { color: var(--couleur2); }
