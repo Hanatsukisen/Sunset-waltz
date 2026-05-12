@@ -118,7 +118,8 @@ c1 {
 .f_middle_links svg { opacity: .4; }
  
 /* ── CHARA INFOS ── */
-.chara_infos { padding: 16px; background: var(--blanc2); border-bottom: var(--border); }
+.chara_infos { padding: 16px; background: var(--blanc2); border-bottom: var(--border);display: flex;
+    flex-direction: column; }
 .tags_fiche2 { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
  
 t3 {
