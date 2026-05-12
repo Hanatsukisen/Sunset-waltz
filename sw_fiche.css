@@ -10,16 +10,24 @@
 /* SIDEBAR */
 .f_side { width: 54px; flex-shrink: 0; position: relative; }
 .f_sidebar {
-  position: absolute;
-  width: 296px; height: 54px;
-  background: var(--blanc2);
-  border-bottom: var(--border);
-  transform: rotate(-90deg) translateX(-296px);
-  transform-origin: top left;
-  display: flex; align-items: center; justify-content: space-around;
-  font-family: poppins, sans-serif;
-  letter-spacing: 2px; font-size: 8.5px; font-weight: 800;
-  text-transform: uppercase; padding: 0 12px; gap: 8px;
+position: absolute;
+    width: 642px;
+    height: 54px;
+    background: var(--blanc2);
+    border-bottom: var(--border);
+    transform: rotate(-90deg) translateX(-296px);
+    transform-origin: top left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: poppins, sans-serif;
+    letter-spacing: 2px;
+    font-size: 8.5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 0 12px;
+    gap: 8px;
+    margin-top: 346px;
 }
 .f_faceclaim { color: var(--couleur3); }
 .f_groupe    { color: var(--couleur2); }
