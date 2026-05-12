@@ -28,7 +28,7 @@
 /* AVATAR */
 .f_ava { width: 216px; flex-shrink: 0; overflow: hidden; border-right: var(--border); }
 .f_ava img {
-  width: 100%; height: 296px; object-fit: cover; display: block;
+  width: 100%; height: 311px; object-fit: cover; display: block;
   filter: grayscale(.08); transition: filter .4s;
 }
 .f_ava:hover img { filter: grayscale(0); }
