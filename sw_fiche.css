@@ -101,7 +101,7 @@ c1 {
 .f_main2 {
   padding: 18px 22px; max-height: 260px; overflow-y: auto;
   text-align: justify; font-size: 11.5px; line-height: 1.8;
-  color: var(--couleur1); border-bottom: var(--border);
+ border-bottom: var(--border);
 }
 .f_main2 p + p { margin-top: 1em; }
  
@@ -113,8 +113,8 @@ c1 {
   font-size: 9.5px; font-weight: 700;
   letter-spacing: 2px; text-transform: uppercase;
 }
-.f_middle_links a { color: var(--couleur2); text-decoration: none; transition: color .2s; }
-.f_middle_links a:hover { color: var(--couleur1); }
+.f_middle_links a { text-decoration: none; transition: color .2s; }
+.f_middle_links a:hover { }
 .f_middle_links svg { opacity: .4; }
  
 /* ── CHARA INFOS ── */
@@ -153,7 +153,7 @@ t3:hover { border-color: var(--couleur1); color: var(--couleur1); }
 .avis_content {
   flex: 1; padding: 14px 16px;
   font-size: 11px; line-height: 1.75;
-  text-align: justify; color: var(--couleur1);
+  text-align: justify;
   max-height: 160px; overflow-y: auto; order: 1;
 }
 .avis_content c1 { display: inline-block; margin-bottom: 6px; }
