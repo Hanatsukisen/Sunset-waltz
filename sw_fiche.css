@@ -10,24 +10,22 @@
 /* SIDEBAR */
 .f_side { width: 54px; flex-shrink: 0; position: relative; }
 .f_sidebar {
-position: absolute;
-    width: 642px;
-    height: 54px;
     background: var(--blanc2);
-    border-bottom: var(--border);
-    transform: rotate(-90deg) translateX(-296px);
-    transform-origin: top left;
+    width: 652px !important;
+    height: 60px;
+    position: absolute;
+    transform: rotate(-90deg);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: poppins, sans-serif;
-    letter-spacing: 2px;
-    font-size: 8.5px;
+    font-family: poppins;
+    margin-top: 652px;
+    letter-spacing: 1px;
+    font-size: 9px;
     font-weight: 800;
+    padding: 0 10px;
     text-transform: uppercase;
-    padding: 0 12px;
-    gap: 8px;
-    margin-top: 346px;
+    border-bottom: 1px solid var(--couleur3);
 }
 .f_faceclaim { color: var(--couleur3); }
 .f_groupe    { color: var(--couleur2); }
