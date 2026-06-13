@@ -114,24 +114,27 @@ text-align: center;
 }
 
 
-/* ── MEMBRES DU MOIS — petites cartes ── */
-.mdm-strip {
+/* ══ MEMBRES DU MOIS — colonne gauche ══ */
+.mdm-left {
   border-top: 1px solid var(--couleur1);
   display: flex;
   flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }
 
-.mdm-strip-head {
+.mdm-left-head {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 8px 14px;
   border-bottom: 1px solid var(--couleur1);
   background: var(--blanc2);
+  flex-shrink: 0;
 }
 
-.mdm-strip-label {
-  font-size: 10px;
+.mdm-left-label {
+  font-size: 7px;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -139,14 +142,14 @@ text-align: center;
   white-space: nowrap;
 }
 
-.mdm-strip-line {
+.mdm-left-line {
   flex: 1;
   height: 1px;
   background: var(--couleur1);
 }
 
-.mdm-strip-month {
-  font-size: 10px;
+.mdm-left-month {
+  font-size: 7px;
   font-weight: 300;
   font-style: italic;
   letter-spacing: 1px;
@@ -154,22 +157,23 @@ text-align: center;
   white-space: nowrap;
 }
 
-.mdm-cards {
+.mdm-left-cards {
   display: flex;
-  flex-direction: column;
+  flex: 1;
   gap: 1px;
+  background: var(--couleur1);
+  overflow: hidden;
 }
 
-.mdm-card {
+.mdm-left-card {
   position: relative;
   overflow: hidden;
-  height: 63px;
-  flex: none;
+  flex: 1;
   background: var(--b3);
   cursor: pointer;
 }
 
-.mdm-card img {
+.mdm-left-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -178,67 +182,67 @@ text-align: center;
   transition: filter .3s, transform .35s;
 }
 
-.mdm-card:hover img {
+.mdm-left-card:hover img {
   filter: grayscale(0%);
   transform: scale(1.06);
 }
 
-.mdm-card::before {
+.mdm-left-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(58,53,48,.5) 0%, transparent 60%);
+  background: linear-gradient(to top, rgba(58,53,48,.55) 0%, transparent 55%);
   z-index: 1;
 }
 
-.mdm-name {
+.mdm-left-name {
   position: absolute;
   bottom: 6px;
   left: 0; right: 0;
   text-align: center;
   z-index: 2;
-  font-size: 9px;
+  font-size: 7px;
   font-weight: 600;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #fff;
 }
 
-.mdm-hover {
-position: absolute;
-    inset: 0;
-    background: var(--transp2);
-    border: 1px solid var(--couleur2);
-    z-index: 3;
-    display: flex;
-    backdrop-filter: blur(5px);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    opacity: 0;
-    transition: opacity .22s;
+.mdm-left-hover {
+  position: absolute;
+  inset: 0;
+  background: rgba(118,146,184,.22);
+  border: 1px solid var(--couleur2);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  opacity: 0;
+  transition: opacity .22s;
 }
 
-.mdm-card:hover .mdm-hover { opacity: 1; }
+.mdm-left-card:hover .mdm-left-hover { opacity: 1; }
 
-.mdm-hover-name {
-  font-family: var(--font3);
-  font-size: 13px;
+.mdm-left-hover-name {
+  font-family: var(--font-display);
+  font-size: 12px;
   color: #fff;
   letter-spacing: 1px;
   text-shadow: 0 1px 5px rgba(0,0,0,.35);
   line-height: 1;
+  text-align: center;
+  padding: 0 4px;
 }
 
-.mdm-hover-sub {
-  font-size: 10px;
+.mdm-left-hover-sub {
+  font-size: 6px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: rgba(255,255,255,.7);
 }
-
 /* ── CORPS PRINCIPAL ───────────────── */
 .pa-body {
   display: grid;
