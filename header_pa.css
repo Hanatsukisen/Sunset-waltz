@@ -493,7 +493,7 @@ position: relative;
   color: var(--couleur2);
   padding: 2px 7px;
   border: 1px solid rgba(118,146,184,.3);
-  background: rgba(118,146,184,.1);
+  background: var(--blanc2);
 }
 
 .pl-item-hover {
