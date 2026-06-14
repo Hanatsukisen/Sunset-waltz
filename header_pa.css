@@ -1489,7 +1489,6 @@ div.header_profile > div.gif_profile_right > div#field_id-13{display:none;}
     text-shadow: -1px -1px 0 var(--blanc1), 1px -1px 0 var(--blanc1), -1px 1px 0 var(--blanc1), 1px 1px 0 var(--blanc1);
     line-height: 60px;
     font-weight: 700;
-   z-index:2;
 }
   
 cc1 {color:var(--couleur1);}
