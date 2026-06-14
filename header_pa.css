@@ -557,7 +557,7 @@ position: relative;
   border: 1px solid var(--couleur2);
   transition: background .2s;
 }
-.preliens-footer-link:hover { background: rgba(118,146,184,.12); }
+.preliens-footer-link:hover { background:var(--c2f); }
   
   
 
