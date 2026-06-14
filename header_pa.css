@@ -1402,8 +1402,7 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
  div.profile_content > div#field_id9 {place-self: center;} 
   
  .tw_profil > div#field_id11 {
-    display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);
-    border-radius: 5px;}
+    display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);}
   .banner_bottom_profile {    display: flex;    border-top: 1px solid var(--couleur3);}
   
 .profile_admin a{background: var(--neutral);border: 1px solid var(--neutralDark);border-radius: 5px;font-weight: 600;margin: 0;font-size: 14px;align-content: center;padding: 6px}
