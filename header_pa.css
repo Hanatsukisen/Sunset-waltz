@@ -1405,7 +1405,16 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
     display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);}
   .banner_bottom_profile {    display: flex;    border-top: 1px solid var(--couleur3);}
   
-.profile_admin a{background: var(--neutral);border: 1px solid var(--neutralDark);border-radius: 5px;font-weight: 600;margin: 0;font-size: 14px;align-content: center;padding: 6px}
+.profile_admin a{font-size: 7.5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--couleur2);
+    text-decoration: none;
+    padding: 5px 12px;
+    border: 1px solid var(--couleur2);
+    transition: background .2s;
+    background: var(--blanc2);}
   
  .gif_profile_right > div#field_id5 img {
     width: 138px;
