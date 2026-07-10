@@ -1152,8 +1152,7 @@ font-family: var(--font);
  z-index: 99;
  top: 5px;
  right: 45px;
- height: 35px;
-  border: 1px solid var(--couleur2);    font-weight: 600;text-transform: uppercase;
+ height: 35px;font-weight: 600;text-transform: uppercase;
     font-size: 11px;
 }
 
