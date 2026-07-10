@@ -1397,7 +1397,7 @@ div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil 
 div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
  
   
- .tw_profil > div#field_id11 {
+ .tw_profil > div#field_id6 {
     display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);}
   .banner_bottom_profile {    display: flex;    border-top: 1px solid var(--couleur3);}
   
