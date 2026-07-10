@@ -1652,3 +1652,9 @@ div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits
     outline-offset: 3px;
     outline: 1px solid var(--couleur3);
 }
+
+
+div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id3, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id5, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id8 {
+    gap: 0px;
+    display: flex !important;
+}
