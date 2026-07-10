@@ -1648,3 +1648,9 @@ div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_
 div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id10{display:none!important;}
 
 div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id11{display:none!important;}
+.header_profile img {
+    width: 138px;
+    object-fit: cover;
+    outline-offset: 3px;
+    outline: 1px solid var(--couleur3);
+}
