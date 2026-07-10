@@ -1396,8 +1396,6 @@ div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil 
 .contacts_profil {background: var(--blanc2);padding: 5px;display: flex;}
 div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
  
- div.profile_content > div#field_id9 label {display: none;}
- div.profile_content > div#field_id9 {place-self: center;} 
   
  .tw_profil > div#field_id11 {
     display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);}
