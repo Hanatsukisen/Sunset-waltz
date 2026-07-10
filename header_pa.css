@@ -1645,7 +1645,6 @@ text-transform: uppercase;
 
 /***PROFILS****/
 div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id1, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-13 {
-    display: none !important;
-} 
+    display: none!important;} 
 
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id10{display:none;}
+div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id10{display:none!important;}
