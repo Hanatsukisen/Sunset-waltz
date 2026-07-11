@@ -1645,3 +1645,13 @@ text-transform: uppercase;
 .pl-item img::after {
     background: linear-gradient(135deg, var(--couleur1), transparent);
 }
+
+
+.gif_profile_right {
+    width: 170px;
+}
+
+.header_profile img {
+    width: 170px;
+    border: 2px solid var(--couleur2);
+}
