@@ -529,8 +529,8 @@ position: relative;
   text-transform: uppercase;
   padding: 2px 7px;
 }
-.pl-status.open { background: rgba(118,146,184,.75); color: #fff; }
-.pl-status.taken { background: rgba(58,53,48,.55); color: rgba(255,255,255,.75); }
+.pl-status.open { background: var(--couleur1); color: #fff; }
+.pl-status.taken { background: var(--couleur2); color: rgba(255,255,255,.75); }
 
 .preliens-footer {
   border-top: 1px solid var(--couleur1);
