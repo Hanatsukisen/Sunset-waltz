@@ -1,4 +1,3 @@
-
 /* ══════════════════════════════════════
    VARIABLES
 ══════════════════════════════════════ */
@@ -1384,9 +1383,10 @@ div#field_id5 img {height: 100px;}
 .profile_messages {display: flex;justify-content: center;gap: 10px;padding: 11px;background: var(--blanc1);}
 
 .inventaire_badges_profile{background: var(--blanc2);padding: 10px;width: 350px;height: 150px;overflow-y: auto;overflow-x: hidden;border: 1px solid var(--couleur2);}
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id2, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id1, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id4, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id5, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id7, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id8, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id9, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id10, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id11, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id12, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-13 div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-4{display:none}
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id1, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id2, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id3, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id4, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id7, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id8, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id9, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id10, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id11, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id-12, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id-13, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id-6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id-4{display: none}
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id1, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id2, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id3, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id4, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id5, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id7, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id9, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id10, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id-11, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id-4, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id-13, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id-6{display: none}
+.profile_playerinfos>.keywords_profile>.tw_profil>div[id^="field_id"]:not(#field_id6){display:none!important}
+.profile_playerinfos>.keywords_profile>.pseudo_profil>div[id^="field_id"]:not(#field_id3){display:none!important}
+.profile_playerinfos>.keywords_profile>.faceclaim_profile>div[id^="field_id"]:not(#field_id5){display:none!important}
+.profile_playerinfos>.keywords_profile>.credits_profile>div[id^="field_id"]:not(#field_id8){display:none!important}
 div.profile_content > div#field_id1, div.profile_content > div#field_id10,div.profile_content > div#field_id5, div.profile_content > div#field_id2, div.profile_content > div#field_id11 {display:none;}
 .pseudo_profil{width: fit-content;background: var(--couleur1);font-weight: 500;text-transform: uppercase;font-size: 11px;padding: 0 5px;border-radius: 2px}
 .faceclaim_profile{width: fit-content;background: var(--couleur2);font-weight: 500;text-transform: uppercase;font-size: 11px;padding: 0 5px;border-radius: 2px}
@@ -1394,7 +1394,6 @@ div.profile_content > div#field_id1, div.profile_content > div#field_id10,div.pr
 
 .pseudo_profil > label, .faceclaim_profile > label, .credits_profile > label  {margin: 0;}
 .profile_playerinfos {display: flex;width: 300px;justify-content: end;}
-div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id5,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id9,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id11,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id1,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id4,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id2,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id3,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id10,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id7,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id8,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id-6,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id-4,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id-11,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id-4,div.profile_right > div.profile_playerinfos > div.keywords_profile > .tw_profil > div#field_id-13{display: none}
 
 .keywords_profile {justify-content: right;justify-items: right;}
 .contacts_profil {background: var(--blanc2);padding: 5px;display: flex;}
@@ -1637,30 +1636,6 @@ text-transform: uppercase;
 
 .forums {
     padding: 20px 10px 20px 10px;
-}
-
-
-
-
-
-/***PROFILS****/
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id1, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-6, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id-13 {
-    display: none!important;} 
-
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id10{display:none!important;}
-
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id11{display:none!important;}
-.header_profile img {
-    width: 138px;
-    object-fit: cover;
-    outline-offset: 3px;
-    outline: 1px solid var(--couleur3);
-}
-
-
-div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id3, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id5, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id8 {
-    gap: 0px;
-    display: flex !important;
 }
 
 
