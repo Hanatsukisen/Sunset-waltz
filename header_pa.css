@@ -326,8 +326,12 @@ position: relative;
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: grayscale(25%);
+  filter: grayscale(1);
   transition: filter .3s, transform .4s;
+}
+
+.staff-card img::after {
+  background: linear-gradient(135deg, var(--couleur2), transparent);
 }
 
 .staff-card:hover img {
@@ -1657,4 +1661,12 @@ div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits
 div.profile_right > div.profile_playerinfos > div.keywords_profile > div.pseudo_profil > div#field_id3, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.faceclaim_profile > div#field_id5, div.profile_right > div.profile_playerinfos > div.keywords_profile > div.credits_profile > div#field_id8 {
     gap: 0px;
     display: flex !important;
+}
+
+
+.pl-item img {
+    filter: grayscale(1);
+}
+.pl-item img::after {
+    background: linear-gradient(135deg, var(--couleur1), transparent);
 }
