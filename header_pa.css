@@ -541,9 +541,9 @@ position: relative;
   background: var(--blanc2);
 }
 .preliens-footer-txt {
-  font-size: 8px;
+  font-size: 12px;
   font-weight: 300;
-  color: var(--text-m);
+  color: var(--textColorAccent);
   font-style: italic;
 }
 .preliens-footer-link {
