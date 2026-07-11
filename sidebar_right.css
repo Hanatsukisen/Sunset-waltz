@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  z-index: 9999;
+  z-index: 997;
   transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .sidebar_right:hover {
