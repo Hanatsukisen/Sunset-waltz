@@ -1054,12 +1054,12 @@ font-family: var(--font);
     line-height: 1;
 }
 
-.jauge-titre span { color: var(--c2); }
+.jauge-titre span { color: var(--couleur2); }
 
 .jauge-pourcent {
 font-family: var(--font);
     font-size: 20px;
-    color: var(--c2);
+    color: var(--couleur2);
     line-height: 1;
 }
 
