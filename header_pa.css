@@ -1192,7 +1192,7 @@ font-family: var(--font);
  width: var(--menuSize);
  position: fixed;
  z-index: 98;
- top: 46px;
+ top: 43px;
  height: 100%;
  right: calc(var(--menuSize) * -1);
  display: flex;
