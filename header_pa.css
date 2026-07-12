@@ -225,7 +225,7 @@ text-align: center;
 .mdm-left-card:hover .mdm-left-hover { opacity: 1; }
 
 .mdm-left-hover-name {
-  font-family: var(--font-display);
+  font-family: var(--font3);
   font-size: 12px;
   color: #fff;
   letter-spacing: 1px;
