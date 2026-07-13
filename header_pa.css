@@ -1401,7 +1401,7 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
  
   
  .tw_profil > div#field_id6 {
-    display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);}
+    display: flex;background: var(--blanc2);padding: 8px;width: 300px;border: 1px solid var(--couleur3);    font-size: 11px;}
   .banner_bottom_profile {    display: flex;    border-top: 1px solid var(--couleur3);}
   
 .profile_admin a{font-size: 7.5px;
