@@ -270,7 +270,7 @@ b1 {
 
 /************SUJET BOUTIQUE****************/
 .shop_title {
-  align-items: anchor-center;
+  align-items: center;
   display: flex;
   gap: 15px;
   background: var(--blanc2);
