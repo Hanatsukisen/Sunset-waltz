@@ -1376,7 +1376,7 @@ font-family: var(--font);
  /**********PROFILES******/
 div#field_id5 img {height: 100px;}
 .header_profile {background: var(--blanc2);padding: 10px;display: flex;justify-content: space-between;    align-items: anchor-center;border-bottom: 1px solid var(--couleur3);padding-left: 50px;}
-.profile_name {line-height: 15px; padding: 10px 0px 0px 0px;}
+.profile_name {line-height: 15px; padding: 10px 0px 0px 0px;align-content: center;}
 .awards_list_profile{padding: 10px;}
 
 .profile_right {width: 50%;justify-items: center;}
