@@ -318,7 +318,7 @@ span.pic_shop img {
   width: 60px;
 }
 .shop_object {
-    align-items: anchor-center;
+    align-items: center;
     border-radius: 10px;
     border-right: 1px solid var(--couleur3);
     border-left: 1px solid var(--couleur3);
