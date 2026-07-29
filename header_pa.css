@@ -280,12 +280,13 @@ text-align: center;
 
 .staff-label {
     font-family: var(--font3);
-    font-size: 26px;
-    color: var(--textColorAccent);
+      color: var(--textColorAccent);
     letter-spacing: 2px;
     line-height: 1;
     display: block;
    text-transform: uppercase;
+    font-size: var(--large-size);
+    font-weight: 700;
 }
 
 .staff-deco {
@@ -860,12 +861,13 @@ width: -webkit-fill-available;
 
 .events-tt {
     font-family: var(--font3);
-    font-size: 26px;
-    color: var(--textColorAccent);
+      color: var(--textColorAccent);
     letter-spacing: 2px;
     line-height: 1;
     display: block;
    text-transform: uppercase;
+    font-size: var(--large-size);
+    font-weight: 700;
 }
 
 .events-sep {
