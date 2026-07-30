@@ -337,7 +337,7 @@ span.name_shop {
   text-align: center;
 }
 span.desc_shop {
-  text-align: justify;
+  text-align: justify;    width: 90%;
 }
 stt {
   font-size: 14px;
@@ -472,10 +472,7 @@ span.name_shop {
   align-content: center;
   text-align: center;
 }
-span.desc_shop {
-  text-align: justify;
-  width: 170px;
-}
+
 stt {
   font-size: 14px;
   text-transform: uppercase;
