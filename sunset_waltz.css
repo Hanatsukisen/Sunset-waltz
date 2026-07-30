@@ -337,7 +337,11 @@ span.name_shop {
   text-align: center;
 }
 span.desc_shop {
-  text-align: justify;    width: 90%;
+  text-align: justify;
+    width: 90%;
+    height: 80px;
+    overflow: auto;
+    padding: 10px;
 }
 stt {
   font-size: 14px;
