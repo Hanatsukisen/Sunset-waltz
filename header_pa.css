@@ -421,7 +421,7 @@ position: relative;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: background .2s;
+  transition: background .2s;height: -webkit-fill-available;
 }
 .pl-item:hover { background: var(--blanc2); }
 
