@@ -50,9 +50,11 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  min-height: 310px;
   filter: grayscale(0.08) contrast(1.03);
   transition: filter 0.5s ease;
+}
+.f_ava {
+    height: 390px;
 }
 .f_ava:hover img {
   filter: grayscale(0) contrast(1);
@@ -478,8 +480,3 @@ b1 {
 .lk_search_icon{width:28px;height:28px;background:var(--blanc1);border:1px solid var(--couleur1);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--couleur3);flex-shrink:0}
 .lk_search_body{display:flex;flex-direction:column;gap:6px;min-width:0;font-size:9.5px;color:var(--textColorAccent);line-height:1.6;text-align:left}
 @media (max-width:640px){.lk_bg{width:100%}.lk_quest{flex-direction:column;align-items:flex-start}.lk_quest_side{align-items:flex-start}.lk_search_grid{grid-template-columns:1fr}}.c_infos {background: var(--blanc2);padding: 20px;overflow-y: auto;height: -webkit-fill-available;}
-
-
-
-
-@media (max-width:640px){.fiche_bg{width:100%}.f_header{flex-direction:column}.f_label{writing-mode:horizontal-tb;transform:none;flex-direction:row;width:100%;padding:6px 12px;font-size:8px}.f_ava{width:100%!important}.f_ava img{min-height:unset!important;height:180px!important}.f_infos{max-height:none}.f_info_label{width:105px;font-size:7.5px;padding:5px 8px}.f_badges{flex-wrap:wrap}.f_badge{flex:1 1 33.33%;height:60px;border-bottom:1px solid var(--couleur1)}.f_name1{font-size:22px}.f_meta{flex-direction:column;min-height:0}.f_tags{border-right:none;border-bottom:1px solid var(--couleur1)}.f_links{width:100%;flex-direction:row}.f_link_item{border-bottom:none;border-right:1px solid var(--couleur1);padding:10px 6px}.f_link_item:last-child{border-right:none}.avis_fiche_1{flex-direction:column}.avis_aes{width:100%;flex-direction:row;padding:8px 14px;border-right:none;border-bottom:1px solid var(--couleur1)}.avis_aes c1{writing-mode:horizontal-tb;transform:none;word-break:normal}.avis_fiche_1.left .avis_aes{border-left:none;border-bottom:1px solid var(--couleur1);order:0}.avis_fiche_1.left .avis_content{order:1}.f_perso{flex-direction:column;min-height:0}.f_perso_cols{width:100%;border-right:none;border-bottom:1px solid var(--couleur1);padding:12px}.f_person2{width:100%}}
