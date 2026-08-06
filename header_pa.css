@@ -1160,7 +1160,9 @@ font-family: var(--font);
  height: 35px;font-weight: 600;text-transform: uppercase;
     font-size: 11px;
 }
-
+.bi-chat-fill::before {
+   COLOR: var(--blanc1);
+}
 /* Conteneur du nombre de notification non lues REMPLI */
 .unread_count {
  position: relative;
