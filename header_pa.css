@@ -1216,7 +1216,7 @@ font-family: var(--font);
 
 /* Menu des notifications OUVERT */
 #notiffi_panel.open {
- right: 0;
+ right: 38;
  visibility: visible;
  opacity: 1;
 }
