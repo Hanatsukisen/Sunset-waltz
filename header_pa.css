@@ -1262,7 +1262,7 @@ font-family: var(--font);
  button {
    padding: 2px 10px;
    background: var(--neutralDark);
-   border-radius: 5px;
+   border: 1px solid var(--couleur3);
 
    &:hover {
      color: var(--accentClr)
@@ -1276,8 +1276,7 @@ font-family: var(--font);
  gap: 15px;
  margin-bottom: 5px;
  padding: 10px;
- border-radius: 5px;
- border: 1px solid transparent;
+ border: 1px solid var(--couleur3);
  transition: border .2s;
  animation: notiffiFadeIn 0.3s ease-in-out;
 
