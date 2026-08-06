@@ -1226,9 +1226,8 @@ font-family: var(--font);
  width: 100%;
  overflow: auto;
  max-height: 100%;
- background: var(--neutralDark);
- padding: 10px;
- border-radius: 10px;
+ background: var(--blanc1); padding: 10px;
+ border-radius: 5px;
  -ms-overflow-style: none;
  scrollbar-width: none;
 
@@ -1322,6 +1321,7 @@ font-family: var(--font);
    object-fit: cover;
    object-position: center;
    border-radius: 5px;
+   border: 2px solid var(--blanc2);
  }
 }
 
