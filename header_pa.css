@@ -1670,3 +1670,13 @@ text-transform: uppercase;
 .profile_playerinfos>.keywords_profile>.credits_profile>div[id^="field_id"]:not(#field_id15) {
     display: none !important;
 }
+
+.post_avatar .ava_hover_post .user_field.field-multicomptes
+ {
+    display: none;
+} 
+
+.tab-content.onglet2 .user_field.field-multicomptes
+ {
+    display: none;
+}
