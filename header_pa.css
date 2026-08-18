@@ -1661,3 +1661,12 @@ text-transform: uppercase;
     width: 170px;
     border: 2px solid var(--couleur2);
 }
+
+
+.profile_playerinfos>.keywords_profile>.pseudo_profil>div[id^="field_id"]:not(#field_id15) {
+    display: none !important;
+}
+
+.profile_playerinfos>.keywords_profile>.credits_profile>div[id^="field_id"]:not(#field_id15) {
+    display: none !important;
+}
