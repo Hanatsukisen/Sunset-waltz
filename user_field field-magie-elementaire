@@ -1670,12 +1670,16 @@ text-transform: uppercase;
 .tab-content.onglet1 .user_field field-magie-elementaire, .tab-content.onglet1 .user_field field-emplacement-de-la-marque
  {display: none;}
 
+.post_userinfo .user_field.field-magie-elementaire, .post_userinfo .user_field.field-emplacement-de-la-marque {
+    display: none;
+}
+
 .tab-content.onglet2 .user_field.field-multicomptes
  {display: none;}
 
-.post_avatar .ava_hover_post .user_field field-magie-elementaire {
+.post_avatar .ava_hover_post .user_field.field-magie-elementaire {
     display: none!important;
 }
-.post_avatar .ava_hover_post .user_field field-emplacement-de-la-marque {
+.post_avatar .ava_hover_post .user_field.field-emplacement-de-la-marque {
     display: none!important;
 }
