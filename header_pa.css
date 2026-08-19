@@ -1392,7 +1392,7 @@ div#field_id5 img {height: 100px;}
 .profile_playerinfos>.keywords_profile>.faceclaim_profile>div[id^="field_id"]:not(#field_id5){display:none!important}
 .profile_playerinfos>.keywords_profile>.credits_profile>div[id^="field_id"]:not(#field_id8){display:none!important}
 div.profile_content > div#field_id1, div.profile_content > div#field_id10,div.profile_content > div#field_id5, div.profile_content > div#field_id2, div.profile_content > div#field_id11 {display:none;}
-div.profile_content > div#field_id1, div.profile_content > div#field_id15{display:none!important}
+div.profile_content > div#field_id1{display:none!important}
 
 .pseudo_profil{width: fit-content;background: var(--couleur1);font-weight: 500;text-transform: uppercase;font-size: 11px;padding: 0 5px;border-radius: 2px}
 .faceclaim_profile{width: fit-content;background: var(--couleur2);font-weight: 500;text-transform: uppercase;font-size: 11px;padding: 0 5px;border-radius: 2px}
