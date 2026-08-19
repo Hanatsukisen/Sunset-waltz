@@ -1672,3 +1672,12 @@ text-transform: uppercase;
 
 .tab-content.onglet2 .user_field.field-multicomptes
  {display: none;}
+
+
+.post_avatar .ava_hover_post .user_field field-magie-elementaire {
+    display: none!important;
+}
+
+.post_avatar .ava_hover_post .user_field field-emplacement-de-la-marque {
+    display: none!important;
+}
