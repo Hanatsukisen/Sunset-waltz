@@ -1434,7 +1434,7 @@ div#user_avatar img{height: -webkit-fill-available;object-fit: cover}
 
 
 div.header_profile > div.gif_profile_right > div#field_id-13{display:none;}
-  div.header_profile > div.gif_profile_right > div#field_id15{display:none;}
+  div.header_profile > div.gif_profile_right > div#field_id15, div.header_profile > div.gif_profile_right > div#field_id16, div.header_profile > div.gif_profile_right > div#field_id17{display:none;}
 
 /****/
   
