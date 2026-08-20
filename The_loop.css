@@ -486,7 +486,7 @@ img.loop_post_img img {
 }
 .lp_tweet_head {
   display: flex;
-  align-items: center;
+  align-items: center;    width: -webkit-fill-available;
   gap: 10px;
   margin-bottom: 8px;
 }
