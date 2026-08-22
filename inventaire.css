@@ -119,3 +119,7 @@
   color: var(--couleur3);
   padding: 6px 0;
 }
+
+.icon_title img{    height: 70px;
+    width: 70px;
+}
