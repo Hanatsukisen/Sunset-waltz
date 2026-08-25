@@ -59,7 +59,7 @@
 .f_ava:hover img {
   filter: grayscale(0) contrast(1);
 }
-.f_ava::after {
+/**.f_ava::after {
   content: "001";
   position: absolute;
   bottom: 10px;
@@ -69,7 +69,7 @@
   letter-spacing: 2px;
   color: var(--couleur2);
   opacity: 0.6;
-}
+}**/
 .f_identity {
   flex: 1;
   display: flex;
