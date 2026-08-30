@@ -39,20 +39,15 @@
   color: var(--couleur2);
 }
 .f_ava {
-  width: 220px;
-  flex-shrink: 0;
-  border-right: 1px solid var(--couleur1);
-  overflow: hidden;
-  position: relative;
+ height: 390px;
 }
 .f_ava img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  min-height: 310px;
-  filter: grayscale(0.08) contrast(1.03);
-  transition: filter 0.5s ease;
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: grayscale(0.08) contrast(1.03);
+    transition: filter 0.5s ease;
 }
 .f_ava:hover img {
   filter: grayscale(0) contrast(1);
