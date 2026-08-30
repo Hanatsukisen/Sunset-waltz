@@ -112,7 +112,6 @@ b1 {
   font-size: 11px;
   line-height: 1.8;
   text-align: justify;
-  max-height: 200px;
   overflow-y: auto;
 }
 .sc_statuts {
