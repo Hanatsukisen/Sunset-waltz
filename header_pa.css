@@ -39,7 +39,7 @@
     flex-direction: column;
     display: flex;
     margin-bottom: 20px;
-    margin-top: 20px;
+ /**   margin-top: 20px;**/
 }
 
 .pa-hero-img {
