@@ -210,7 +210,7 @@ text-align: center;
 .mdm-left-hover {
   position: absolute;
   inset: 0;
-  background: rgba(118,146,184,.22);
+  background: var(--transp2);
   border: 1px solid var(--couleur2);
   z-index: 3;
   display: flex;
